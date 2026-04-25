@@ -17,7 +17,7 @@
                 <ul class="nav-links">
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#por-que">¿Por qué nosotros?</a></li>
+                    <li><a href="#galeria">Galería</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </div>
@@ -25,10 +25,12 @@
     </header>
 
     <main>
+        <!-- HERO SECTION -->
         <section id="inicio" class="hero">
-            <div class="container">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
                 <h1>¡Bienvenido a ImpulsaNext!</h1>
-                <p>Evolucionamos para ofrecerte soluciones integrales</p>
+                <p class="hero-main">Evolucionamos para ofrecerte soluciones integrales</p>
                 <p class="hero-subtitle">
                     Presentamos nuestras nuevas líneas de negocio, diseñadas para acompañarte en tus metas más importantes.
                 </p>
@@ -36,53 +38,159 @@
             </div>
         </section>
 
+        <!-- SERVICIOS CON IMÁGENES -->
         <section id="servicios" class="servicios">
             <div class="container">
                 <h2>Nuestras Líneas de Negocio</h2>
-                <div class="servicios-grid">
-                    <div class="servicio-card">
+                
+                <!-- INMOBILIARIA -->
+                <div class="servicio-completo">
+                    <div class="servicio-texto">
                         <div class="servicio-icon">🏠</div>
                         <h3>Línea Inmobiliaria</h3>
-                        <p>Gestión experta en compra y venta de inmuebles con asesoría completa de principio a fin.</p>
+                        <p>Gestión experta en compra y venta de inmuebles con asesoría completa de principio a fin. Contamos con un portafolio variado de propiedades de alta calidad.</p>
+                        <ul class="beneficios">
+                            <li>✓ Propiedades premium</li>
+                            <li>✓ Asesoría financiera</li>
+                            <li>✓ Trámites legales completos</li>
+                        </ul>
                     </div>
-                    <div class="servicio-card">
+                    <div class="servicio-galeria">
+                        <div class="galeria-grid">
+                            <img src="casa1.jpeg" alt="Propiedad 1" class="galeria-img">
+                            <img src="casa2.jepg" alt="Propiedad 2" class="galeria-img">
+                            <img src="casa4.jepg" alt="Propiedad 3" class="galeria-img">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AUTOMOTORES -->
+                <div class="servicio-completo reverse">
+                    <div class="servicio-galeria">
+                        <div class="galeria-grid">
+                            <img src="carro2.jpeg" alt="Auto 1" class="galeria-img">
+                            <img src="supra.jepg" alt="Auto 2" class="galeria-img">
+                            <img src="mercedes.jepg" alt="Auto 3" class="galeria-img">
+                        </div>
+                    </div>
+                    <div class="servicio-texto">
                         <div class="servicio-icon">🚗</div>
                         <h3>Línea de Automotores</h3>
-                        <p>Comercialización de vehículos usados y de salvamento. Especialistas en gestión comercial y vehículos con mora.</p>
+                        <p>Comercialización de vehículos usados y de salvamento. Especialistas en gestión comercial y vehículos con mora. Contamos con una amplia variedad de marcas y modelos.</p>
+                        <ul class="beneficios">
+                            <li>✓ Vehículos verificados</li>
+                            <li>✓ Financiamiento disponible</li>
+                            <li>✓ Garantía extendida</li>
+                        </ul>
                     </div>
-                    <div class="servicio-card">
+                </div>
+
+                <!-- CREDITICIA -->
+                <div class="servicio-completo">
+                    <div class="servicio-texto">
                         <div class="servicio-icon">💰</div>
                         <h3>Línea Crediticia</h3>
-                        <p>Tu puente financiero. Gestionamos y asesoramos la obtención de créditos bancarios y particulares.</p>
+                        <p>Tu puente financiero. Gestionamos y asesoramos la obtención de créditos bancarios y particulares. Conectamos inversores con oportunidades de negocio.</p>
+                        <ul class="beneficios">
+                            <li>✓ Tasas competitivas</li>
+                            <li>✓ Proceso rápido</li>
+                            <li>✓ Asesoría personalizada</li>
+                        </ul>
                     </div>
-                    <div class="servicio-card">
+                    <div class="servicio-icono-grande">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                </div>
+
+                <!-- JOYERÍA -->
+                <div class="servicio-completo reverse">
+                    <div class="servicio-galeria">
+                        <div class="galeria-grid">
+                            <img src="collar1.jepg" alt="Joya 1" class="galeria-img">
+                            <img src="collar2.jepg" alt="Joya 2" class="galeria-img">
+                        </div>
+                    </div>
+                    <div class="servicio-texto">
                         <div class="servicio-icon">💎</div>
                         <h3>Línea de Joyería</h3>
-                        <p>Arte y valor en tus manos. Elaboración, transformación y comercio de joyas. Compramos oro, plata y materias primas.</p>
+                        <p>Arte y valor en tus manos. Elaboración, transformación y comercio de joyas. Compramos oro, plata y materias primas a los mejores precios del mercado.</p>
+                        <ul class="beneficios">
+                            <li>✓ Joyas auténticas</li>
+                            <li>✓ Tasación profesional</li>
+                            <li>✓ Compra de metales preciosos</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="por-que" class="about-section">
+        <!-- GALERÍA COMPLETA -->
+        <section id="galeria" class="galeria-completa">
             <div class="container">
-                <h2>¿Por qué Elegirnos?</h2>
-                <div class="about-content">
-                    <p>
-                        En ImpulsaNext, nos comprometemos a ser tu socio estratégico en el crecimiento de tus negocios. 
-                        Con experiencia en múltiples sectores, ofrecemos soluciones integrales y personalizadas.
-                    </p>
-                    <ul class="benefits-list">
-                        <li>✓ Asesoría profesional en cada área</li>
-                        <li>✓ Atención personalizada al cliente</li>
-                        <li>✓ Soluciones rápidas y efectivas</li>
-                        <li>✓ Equipo experto y comprometido</li>
-                        <li>✓ Resultados comprobados</li>
-                    </ul>
+                <h2>Nuestro Portafolio</h2>
+                <p class="galeria-subtitulo">Conoce nuestros proyectos y productos destacados</p>
+                
+                <div class="galeria-filtros">
+                    <button class="filtro-btn activo" data-filter="todos">Todos</button>
+                    <button class="filtro-btn" data-filter="inmuebles">Inmuebles</button>
+                    <button class="filtro-btn" data-filter="autos">Autos</button>
+                    <button class="filtro-btn" data-filter="joyas">Joyas</button>
+                </div>
+
+                <div class="galeria-grid-grande">
+                    <div class="galeria-item inmuebles" data-category="inmuebles">
+                        <img src="casa1.jpeg" alt="Propiedad 1">
+                        <div class="galeria-overlay">
+                            <h4>Propiedad Moderna</h4>
+                        </div>
+                    </div>
+                    <div class="galeria-item inmuebles" data-category="inmuebles">
+                        <img src="casa2.jepg" alt="Propiedad 2">
+                        <div class="galeria-overlay">
+                            <h4>Casa Elegante</h4>
+                        </div>
+                    </div>
+                    <div class="galeria-item inmuebles" data-category="inmuebles">
+                        <img src="casa4.jepg" alt="Propiedad 3">
+                        <div class="galeria-overlay">
+                            <h4>Apartamento Premium</h4>
+                        </div>
+                    </div>
+                    <div class="galeria-item autos" data-category="autos">
+                        <img src="carro2.jpeg" alt="Auto 1">
+                        <div class="galeria-overlay">
+                            <h4>Vehículo Verificado</h4>
+                        </div>
+                    </div>
+                    <div class="galeria-item autos" data-category="autos">
+                        <img src="supra.jepg" alt="Supra">
+                        <div class="galeria-overlay">
+                            <h4>Auto Deportivo</h4>
+                        </div>
+                    </div>
+                    <div class="galeria-item autos" data-category="autos">
+                        <img src="mercedes.jepg" alt="Mercedes">
+                        <div class="galeria-overlay">
+                            <h4>Lujo y Elegancia</h4>
+                        </div>
+                    </div>
+                    <div class="galeria-item joyas" data-category="joyas">
+                        <img src="collar1.jepg" alt="Joya 1">
+                        <div class="galeria-overlay">
+                            <h4>Collar Exclusivo</h4>
+                        </div>
+                    </div>
+                    <div class="galeria-item joyas" data-category="joyas">
+                        <img src="collar2.jepg" alt="Joya 2">
+                        <div class="galeria-overlay">
+                            <h4>Joya Premium</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- CONTACTO -->
         <section id="contacto" class="contacto">
             <div class="container">
                 <h2>¡Estamos Listos para Impulsarte!</h2>
@@ -107,7 +215,7 @@
                 </div>
 
                 <div class="contacto-buttons">
-                    <a href="https://wa.me/573132293721?text=Hola%20ImpulsaNext!%20Quiero%20conocer%20m%C3%A1s%20sobre%20sus%20servicios." class="contact-button whatsapp" target="_blank">
+                    <a href="https://wa.me/573132293621?text=Hola%20ImpulsaNext!%20Quiero%20conocer%20m%C3%A1s%20sobre%20sus%20servicios." class="contact-button whatsapp" target="_blank">
                         <i class="fab fa-whatsapp"></i> WhatsApp
                     </a>
                     <a href="mailto:tatan.779@hotmail.com" class="contact-button email">
@@ -124,5 +232,40 @@
             <p>Cristian Lombana | Bogotá, D.C.</p>
         </div>
     </footer>
+
+    <script>
+        // Filtro de galería
+        const filtros = document.querySelectorAll('.filtro-btn');
+        const items = document.querySelectorAll('.galeria-item');
+
+        filtros.forEach(filtro => {
+            filtro.addEventListener('click', () => {
+                filtros.forEach(f => f.classList.remove('activo'));
+                filtro.classList.add('activo');
+
+                const filter = filtro.dataset.filter;
+                items.forEach(item => {
+                    if (filter === 'todos' || item.dataset.category === filter) {
+                        item.style.display = 'block';
+                        setTimeout(() => item.classList.add('show'), 0);
+                    } else {
+                        item.classList.remove('show');
+                        setTimeout(() => item.style.display = 'none', 300);
+                    }
+                });
+            });
+        });
+
+        // Desplazamiento suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
