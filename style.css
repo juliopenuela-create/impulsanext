@@ -17,15 +17,23 @@ body {
     padding: 0 20px;
 }
 
+/* ============ COLOR PALETTE ============ */
+/* Verde Oliva: #556B2F */
+/* Azul Marino: #0B3D5C */
+/* Dorado: #D4AF37 */
+/* Plateado: #C0C0C0 */
+/* Blanco: #FFFFFF */
+
 /* ============ HEADER ============ */
 header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0B3D5C 0%, #1a5a7a 100%);
     color: white;
     padding: 0.8rem 0;
     position: sticky;
     top: 0;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
     z-index: 1000;
+    border-bottom: 3px solid #D4AF37;
 }
 
 .navbar {
@@ -50,6 +58,7 @@ header {
     height: 50px;
     width: auto;
     transition: transform 0.3s;
+    filter: drop-shadow(0 2px 4px rgba(212, 175, 55, 0.3));
 }
 
 .logo-img:hover {
@@ -65,18 +74,20 @@ header {
 .nav-links a {
     color: white;
     text-decoration: none;
-    transition: opacity 0.3s, text-shadow 0.3s;
+    transition: opacity 0.3s, color 0.3s;
     font-weight: 500;
 }
 
 .nav-links a:hover {
     opacity: 0.8;
-    text-shadow: 0 0 10px rgba(255,255,255,0.5);
+    color: #D4AF37;
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
 }
 
 /* ============ HERO SECTION ============ */
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0B3D5C 0%, #1a5a7a 100%),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="pattern" patternUnits="userSpaceOnUse" width="100" height="100"><circle cx="50" cy="50" r="1" fill="rgba(212,175,55,0.1)"/></pattern></defs><rect width="1200" height="600" fill="url(%23pattern)"/></svg>');
     color: white;
     padding: 10rem 0;
     text-align: center;
@@ -92,9 +103,18 @@ header {
     right: 0;
     bottom: 0;
     background: 
-        radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(255,255,255,0.05) 0%, transparent 50%);
+        radial-gradient(circle at 20% 50%, rgba(212,175,55,0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(85,107,47,0.08) 0%, transparent 50%);
     pointer-events: none;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 61, 92, 0.3);
 }
 
 .hero-content {
@@ -107,7 +127,8 @@ header {
     margin-bottom: 1rem;
     animation: slideDown 0.8s ease-out;
     font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    color: #FFFFFF;
 }
 
 .hero-main {
@@ -115,6 +136,7 @@ header {
     margin-bottom: 1rem;
     animation: slideUp 0.8s ease-out;
     font-weight: 300;
+    color: #D4AF37;
 }
 
 .hero-subtitle {
@@ -125,6 +147,7 @@ header {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    color: #FFFFFF;
 }
 
 @keyframes slideDown {
@@ -151,35 +174,36 @@ header {
 
 .cta-button {
     display: inline-block;
-    background: white;
-    color: #667eea;
-    border: none;
+    background: #D4AF37;
+    color: #0B3D5C;
+    border: 2px solid #D4AF37;
     padding: 1.2rem 3rem;
     font-size: 1.1rem;
     border-radius: 50px;
     cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s, color 0.3s;
     font-weight: 700;
     text-decoration: none;
 }
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
-    background: #f0f0f0;
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.4);
+    background: #FFFFFF;
+    color: #0B3D5C;
 }
 
 /* ============ SERVICIOS SECTION ============ */
 .servicios {
     padding: 8rem 0;
-    background: white;
+    background: #FFFFFF;
 }
 
 .servicios h2 {
     text-align: center;
     font-size: 3rem;
     margin-bottom: 4rem;
-    color: #333;
+    color: #0B3D5C;
     font-weight: 700;
     position: relative;
 }
@@ -189,7 +213,7 @@ header {
     display: block;
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, #667eea, #764ba2);
+    background: linear-gradient(90deg, #D4AF37, #556B2F);
     margin: 1rem auto 0;
 }
 
@@ -234,7 +258,7 @@ header {
 
 .servicio-texto h3 {
     font-size: 2rem;
-    color: #667eea;
+    color: #556B2F;
     margin-bottom: 1rem;
     font-weight: 700;
 }
@@ -252,9 +276,16 @@ header {
 
 .beneficios li {
     font-size: 0.95rem;
-    color: #667eea;
+    color: #0B3D5C;
     margin: 0.8rem 0;
     font-weight: 600;
+}
+
+.beneficios li::before {
+    content: '✓ ';
+    color: #D4AF37;
+    font-weight: bold;
+    margin-right: 0.5rem;
 }
 
 .servicio-galeria {
@@ -273,13 +304,15 @@ header {
     object-fit: cover;
     border-radius: 15px;
     transition: transform 0.4s, box-shadow 0.4s;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 25px rgba(11, 61, 92, 0.2);
     cursor: pointer;
+    border: 3px solid #D4AF37;
 }
 
 .galeria-img:hover {
     transform: scale(1.05) translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.4);
+    border-color: #C0C0C0;
 }
 
 .servicio-icono-grande {
@@ -287,22 +320,31 @@ header {
     align-items: center;
     justify-content: center;
     font-size: 8rem;
-    color: #667eea;
+    color: #D4AF37;
     opacity: 0.2;
 }
 
 /* ============ GALERÍA COMPLETA ============ */
 .galeria-completa {
     padding: 8rem 0;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(135deg, #f0f0f0 0%, #e8e8e8 100%);
 }
 
 .galeria-completa h2 {
     text-align: center;
     font-size: 3rem;
     margin-bottom: 0.5rem;
-    color: #333;
+    color: #0B3D5C;
     font-weight: 700;
+}
+
+.galeria-completa h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #D4AF37, #556B2F);
+    margin: 1rem auto 0;
 }
 
 .galeria-subtitulo {
@@ -322,9 +364,9 @@ header {
 
 .filtro-btn {
     padding: 0.8rem 2rem;
-    border: 2px solid #667eea;
+    border: 2px solid #0B3D5C;
     background: white;
-    color: #667eea;
+    color: #0B3D5C;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s;
@@ -334,9 +376,10 @@ header {
 
 .filtro-btn:hover,
 .filtro-btn.activo {
-    background: #667eea;
-    color: white;
-    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+    background: #0B3D5C;
+    color: #D4AF37;
+    box-shadow: 0 8px 20px rgba(11, 61, 92, 0.3);
+    border-color: #D4AF37;
 }
 
 .galeria-grid-grande {
@@ -349,10 +392,11 @@ header {
     position: relative;
     overflow: hidden;
     border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 25px rgba(11, 61, 92, 0.2);
     cursor: pointer;
     height: 300px;
     animation: fadeIn 0.5s ease-out;
+    border: 2px solid #D4AF37;
 }
 
 .galeria-item img {
@@ -372,7 +416,7 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(102, 126, 234, 0.9);
+    background: linear-gradient(135deg, rgba(11, 61, 92, 0.95), rgba(85, 107, 47, 0.95));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -385,7 +429,7 @@ header {
 }
 
 .galeria-overlay h4 {
-    color: white;
+    color: #D4AF37;
     font-size: 1.3rem;
     text-align: center;
     font-weight: 700;
@@ -404,21 +448,24 @@ header {
 
 /* ============ CONTACTO ============ */
 .contacto {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0B3D5C 0%, #1a5a7a 100%);
     color: white;
     padding: 8rem 0;
     text-align: center;
+    border-top: 3px solid #D4AF37;
 }
 
 .contacto h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
     font-weight: 700;
+    color: #FFFFFF;
 }
 
 .contacto > .container > p {
     font-size: 1.2rem;
     margin-bottom: 3rem;
+    color: #D4AF37;
 }
 
 .contacto-info {
@@ -429,28 +476,31 @@ header {
 }
 
 .info-card {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(212, 175, 55, 0.1);
     padding: 2.5rem;
     border-radius: 15px;
     backdrop-filter: blur(10px);
     transition: transform 0.3s, background 0.3s;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 2px solid #D4AF37;
 }
 
 .info-card:hover {
     transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(212, 175, 55, 0.2);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
 }
 
 .info-card i {
     font-size: 3rem;
     margin-bottom: 1rem;
+    color: #D4AF37;
 }
 
 .info-card h3 {
     margin-bottom: 1rem;
     font-size: 1.3rem;
     font-weight: 700;
+    color: #FFFFFF;
 }
 
 .info-card a,
@@ -461,6 +511,7 @@ header {
 }
 
 .info-card a:hover {
+    color: #D4AF37;
     text-decoration: underline;
 }
 
@@ -481,6 +532,7 @@ header {
     font-weight: 700;
     transition: transform 0.3s, box-shadow 0.3s;
     font-size: 1.1rem;
+    border: 2px solid transparent;
 }
 
 .contact-button.whatsapp {
@@ -489,21 +541,22 @@ header {
 }
 
 .contact-button.email {
-    background: white;
-    color: #667eea;
+    background: #D4AF37;
+    color: #0B3D5C;
 }
 
 .contact-button:hover {
     transform: translateY(-4px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.4);
 }
 
 /* ============ FOOTER ============ */
 footer {
-    background: #1a1a1a;
+    background: #0B3D5C;
     color: white;
     text-align: center;
     padding: 3rem 0;
+    border-top: 3px solid #D4AF37;
 }
 
 footer p {
