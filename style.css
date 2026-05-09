@@ -565,7 +565,7 @@ footer p {
 }
 
 /* ============ RESPONSIVE ============ */
-@media (max-width: 968px) {
+@media (max-width: 2000px) {
     .servicio-completo {
         grid-template-columns: 1fr;
     }
@@ -606,7 +606,7 @@ footer p {
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1200px) {
     .logo-img {
         height: 40px;
     }
