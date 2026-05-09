@@ -8,7 +8,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    background: #f5f5f5;
+    background: #1635cc;
 }
 
 .container {
@@ -26,7 +26,7 @@ body {
 
 /* ============ HEADER ============ */
 header {
-    background: linear-gradient(135deg, #0B3D5C 0%, #1a5a7a 100%);
+    background: linear-gradient(135deg, #0914e6 0%, #07a0ed 100%);
     color: white;
     padding: 0.8rem 0;
     position: sticky;
