@@ -175,7 +175,7 @@ header {
 .cta-button {
     display: inline-block;
     background: #D4AF37;
-    color: #0B3D5C;
+    color: ##9cafba;
     border: 2px solid #D4AF37;
     padding: 1.2rem 3rem;
     font-size: 1.1rem;
@@ -203,7 +203,7 @@ header {
     text-align: center;
     font-size: 3rem;
     margin-bottom: 4rem;
-    color: #0B3D5C;
+    color: ##9cafba;
     font-weight: 700;
     position: relative;
 }
@@ -276,7 +276,7 @@ header {
 
 .beneficios li {
     font-size: 0.95rem;
-    color: #0B3D5C;
+    color: #9cafba;
     margin: 0.8rem 0;
     font-weight: 600;
 }
@@ -334,7 +334,7 @@ header {
     text-align: center;
     font-size: 3rem;
     margin-bottom: 0.5rem;
-    color: #0B3D5C;
+    color: #9cafba;
     font-weight: 700;
 }
 
@@ -364,9 +364,9 @@ header {
 
 .filtro-btn {
     padding: 0.8rem 2rem;
-    border: 2px solid #0B3D5C;
+    border: 2px solid #9cafba;
     background: white;
-    color: #0B3D5C;
+    color:#9cafba;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s;
@@ -376,7 +376,7 @@ header {
 
 .filtro-btn:hover,
 .filtro-btn.activo {
-    background: #0B3D5C;
+    background: #9cafba;
     color: #D4AF37;
     box-shadow: 0 8px 20px rgba(11, 61, 92, 0.3);
     border-color: #D4AF37;
@@ -448,7 +448,7 @@ header {
 
 /* ============ CONTACTO ============ */
 .contacto {
-    background: linear-gradient(135deg, #0B3D5C 0%, #1a5a7a 100%);
+    background: linear-gradient(135deg, #9cafba 0%, #1a5a7a 100%);
     color: white;
     padding: 8rem 0;
     text-align: center;
@@ -552,7 +552,7 @@ header {
 
 /* ============ FOOTER ============ */
 footer {
-    background: #0B3D5C;
+    background: #9cafba;
     color: white;
     text-align: center;
     padding: 3rem 0;
