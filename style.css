@@ -327,7 +327,7 @@ header {
 /* ============ GALERÍA COMPLETA ============ */
 .galeria-completa {
     padding: 8rem 0;
-    background: linear-gradient(135deg, #f0f0f0 0%, #e8e8e8 100%);
+    background: linear-gradient(135deg, #546BC9 0%, #e8e8e8 100%);
 }
 
 .galeria-completa h2 {
@@ -366,7 +366,7 @@ header {
     padding: 0.8rem 2rem;
     border: 2px solid #9cafba;
     background: white;
-    color:#9cafba;
+    color:#546BC9;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s;
